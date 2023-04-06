@@ -13,9 +13,6 @@
       }
       $.fn.mauGallery.listeners(options);
 
-      debugger;
-
-
       $(this)
         .children(".gallery-item")
         .each(function(index) {
@@ -137,6 +134,7 @@
             imagesCollection.push($(this).children("img"));
           }
         });
+
       } else {
         $(".item-column").each(function() {
           if (
@@ -243,7 +241,7 @@
         return;
       }
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+      $(this).addClass("active-tag active");
 
       var tag = $(this).data("images-toggle");
 
